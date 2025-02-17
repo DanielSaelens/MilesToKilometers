@@ -1,0 +1,44 @@
+Q1: Line 11 in the WordAnalyzerTester, when we run it through the debugger we get an index out of bounds
+exception. Line 32 first repeated character method.
+
+Q2: Line 30, I added -1 to to account for line 32. 
+Changing the loop condition to i < word.length() - 1 prevents an out-of-bounds error by ensuring the 
+last accessed index is within the valid range of the string. 
+
+
+Q3: First part Cannot invoke "String.length()" because "this.word" is null:
+    Second part
+    Exception in thread "main" java.lang.AssertionError
+	at WordAnalyzer.<init>(WordAnalyzer.java:20) // When it is not null, it will throw an expcetion in main.
+	at WordAnalyzerTester.test(WordAnalyzerTester.java:17)
+	at WordAnalyzerTester.main(WordAnalyzerTester.java:9)
+	
+	
+
+Q4: Yes, the vlaue for word is aabbcdaaaabb.
+
+
+Q5:  What is c_index for the first trigger? Is this what we expect? Yes, c_index = 1
+
+
+Q6: There were three bugs:
+
+1.for (int c_index = 1; c_index < word.length() -1 ; c_index++)
+	The minues one was casuing inproper output.
+2. The first if statement was causing an out of bounds exception
+
+3. The second if statement was not being visited because of the implementation of the first.
+Below is the corrected code.
+
+	public int countRepeatedCharacters() {
+		int count = 0;
+		for (int c_index = 1; c_index < word.length(); c_index++) {
+			if (word.charAt(c_index) == word.charAt(c_index - 1)) // found a repetition
+				if (c_index == 1 || word.charAt(c_index - 2) != word.charAt(c_index)) // it's the start
+					count++;
+		}
+			
+		
+		return count;
+	}
+

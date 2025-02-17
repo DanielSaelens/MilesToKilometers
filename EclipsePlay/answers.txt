@@ -1,0 +1,8 @@
+
+Question 1: It reverses the indent.
+Question 2: When I run it, we get actual name and email.
+ [Person [name=Mark, email=baldwin], Person [name=Jane, 
+email=jsmith], Person [name=Joe, email=jdoe]]
+
+Question 3: When we comment out the toString method this is the result we get.
+[Friend@16f7c8c1, Friend@2f0a87b3, Friend@319b92f3]

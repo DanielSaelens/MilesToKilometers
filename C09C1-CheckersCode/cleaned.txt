@@ -1,0 +1,21 @@
+Board class:
+1. static final int booardDimension = 8; This should have been all caps because it was final, and it was misspelled.
+2. private ArrayList<Piece> boardPiecesArrayList; This is redundant, because it is already of type ArrayList the name could just be boardPieces
+3. I changed the name from currTitleColor to currentTitleColor. The vagueness was confusing me.
+4. Typo Create3s
+5. Overall added some comments for details on each component in the class. I did change some naming due to redundancy or vagueness.
+Color class:
+The ENUM meets the standards so I did not change it.
+Piece Class:
+1. I changed both king and Color variables to be private so they would not be changed.
+2. I added more comments so the descriptions made more sense for variables and methods.
+3. I added the getters and setters for the variables I made private.
+Tile:
+1. Removed super() since no inheritance is being implemented.
+2. For the draw method I added my private members to be accessed, getKing and getColor
+3. I added getters and setters, even though the code operated without them, I did it for good practice.
+4. I added more comments for better documentation and overall understanding.
+
+
+Total: 12 changes to make this code more efficient and readable. 
+

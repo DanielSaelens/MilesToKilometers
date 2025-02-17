@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>Inheirtance</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>src/Bank.java</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/Downloads/Bank.java</locationURI>
+		</link>
+		<link>
+			<name>src/BankingAccount.java</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/Downloads/BankingAccount.java</locationURI>
+		</link>
+		<link>
+			<name>src/SavingsAccount.java</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/Downloads/SavingsAccount.java</locationURI>
+		</link>
+	</linkedResources>
+</projectDescription>
